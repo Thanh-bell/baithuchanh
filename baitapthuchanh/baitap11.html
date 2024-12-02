@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tinh toan so hoc</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+<script language="JavaScript">
+    function a_cong_b(form) {
+     a=eval(form.a.value);
+     b=eval(form.b.value);
+     c=a+b;
+     form.ans.value = c;
+    }
+    function a_tru_b(form) {
+     a=eval(form.a.value);
+     b=eval(form.b.value);
+     c=a-b;
+     form.ans.value=c;
+    }
+    function a_nhan_b(form) {
+     a=eval(form.a.value);
+     b=eval(form.b.value);
+     c=a*b;
+     form.ans.value=c;
+    }
+    function a_chia_b(form) {
+    a=eval(form.a.value);
+    b=eval(form.b.value);
+    c=a/b;
+    form.ans.value = c;
+    }
+    function a_mu_b(form) {
+    a=eval(form.a.value);
+    b=eval(form.b.value);
+    c=Math.pow(a, b);
+    form.ans.value = c;
+    }
+</script>
+<body>
+    <form name="formX"><p>
+        <input type="text" size="4" value="12" name="a">
+        <input type="button" value="+"
+             onClick="a_cong_b(document.formX)"/>
+        <input type="button" value="-" onClick="a_tru_b(document.formX)"/>
+        <input type="button" value="x"
+            onClick="a_nhan_b(document.formX)"/>
+        <input type="button" value="/" onClick="a_chia_b(document.formX)"/>
+        <input type="button" value="^" onClick="a_mu_b(document.formX)"/>
+        <input type="number" size="4" value="3" name="b"/> =
+        <input type="number" value="0" name="ans" size="9"/>
+        </p></form>       
+</body>
+</html>
